@@ -1,0 +1,82 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+  
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(211, 100%, 50%);
+}
+  
+body.correct {
+	background-color: #6DE045;
+}
+  
+body.wrong {
+	background-color: #FB1C0E;
+}
+  
+.container {
+	width: 600px;
+	max-width: 80%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+}
+  
+.btn-grid {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 10px;
+	margin: 20px 0;
+}
+  
+.btn {
+	border: none;
+	border-radius: 5px;
+	padding: 8px 16px;
+	font-size: 1rem;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	background-color: hsl(211, 100%, 50%);
+}
+  
+.btn:hover {
+	border-color: black;
+}
+  
+.btn.correct {
+	background-color: #6DE045;
+	color: black;
+}
+  
+.btn.wrong {
+	background-color: #FB1C0E;
+}
+  
+.start-btn, .next-btn {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px 20px;
+	background-color: hsl(211, 100%, 50%);
+}
+  
+.controls {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+  
+.hide {
+	display: none;
+}
